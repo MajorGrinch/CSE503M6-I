@@ -29,6 +29,7 @@ var app = http.createServer(function(req, resp){
 					"Content-Type": mimetype
 				});
 				resp.write(data);
+				console.log(filename);
 				resp.end();
 				return;
 			});
